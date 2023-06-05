@@ -30,6 +30,10 @@
         </div>
     <!-------------------settings-menu------------------ -->
         <div class="settings-menu">
+
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
             <div class="setting-menu-inner">
                 <div class="user-profile">
                     <img src="images/profile-pic.png">
@@ -100,7 +104,7 @@
                 </div>
                 <div class="story story2">
                     <img src="images/member-1.png" alt="">
-                    <p>JAckson</p>
+                    <p>Jackson</p>
                 </div>
                 <div class="story story3">
                     <img src="images/member-2.png" alt="">
@@ -108,11 +112,11 @@
                 </div>
                 <div class="story story4">
                     <img src="images/member-3.png" alt="">
-                    <p>sammy</p>
+                    <p>Sammy</p>
                 </div>
                 <div class="story story5">
                     <img src="images/member-4.png" alt="">
-                    <p>santner</p>
+                    <p>Santner</p>
                 </div>
             </div>
 
@@ -358,9 +362,15 @@
 <!-- <script src="script.js"></script> -->
  <script>
 var settingsmenu = document.querySelector(".settings-menu");
+var darkBtn = document.getElementById("dark-btn")
 
 function settingsMenuToggle(){
     settingsmenu.classList.toggle("settings-menu-height");
+}
+
+darkBtn.onclick = function(){
+    darkBtn.classList.toggle("dark-btn-on");
+    document.body.classList.toggle("dark-theme")
 }
  </script>
 
