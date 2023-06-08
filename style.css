@@ -364,6 +364,7 @@ nav{
 }
 
 .post-input-container{
+    position: relative;
     padding-left: 55px;
     padding-top: 20px;
 
@@ -377,6 +378,23 @@ nav{
     background: transparent;
     resize: none;
 
+
+}
+
+.post-btn {
+    cursor: pointer;
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #1876f2;
+    color: white;
+    right: 40px;
+    top: 20%;
+    border: none;
+    display: none;
+}
+
+.post-input-container textarea:focus-within + .post-btn {
+    display: block;
 }
 
 .add-post-links{
